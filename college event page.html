@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 12px;
+            background-color: #1d4ed8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .banner {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #facc15;
+            color: #172554;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 35px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #172554;
+        }
+
+        .schedule {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .event-card {
+            flex: 1 1 250px;
+            background-color: white;
+            padding: 22px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #00000015;
+        }
+
+        .event-card h3 {
+            color: #2563eb;
+            margin-bottom: 8px;
+        }
+
+        .registration {
+            text-align: center;
+            background-color: #e0e7ff;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .banner {
+                padding: 40px 15px;
+            }
+
+            .banner h2 {
+                font-size: 1.8rem;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .schedule {
+                flex-direction: column;
+            }
+
+            .event-card {
+                flex: 1 1 auto;
+                width: 100%;
+            }
+
+            section {
+                padding: 25px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>ABC College of Engineering</h1>
+        <p>Learning Today, Leading Tomorrow</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#register">Register</a>
+    </nav>
+
+    <main>
+        <section class="banner" id="home">
+            <h2>TECH FEST 2026</h2>
+            <p>Explore Innovation, Technology and Creativity!</p>
+            <p>Date: November 15, 2026 | Venue: College Auditorium</p>
+            <a class="btn" href="#register">Register Now</a>
+        </section>
+
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+
+            <div class="schedule">
+                <article class="event-card">
+                    <h3>09:00 AM</h3>
+                    <h4>Inauguration</h4>
+                    <p>Welcome address and opening ceremony.</p>
+                </article>
+
+                <article class="event-card">
+                    <h3>10:30 AM</h3>
+                    <h4>Technical Workshop</h4>
+                    <p>Hands-on sessions on emerging technologies.</p>
+                </article>
+
+                <article class="event-card">
+                    <h3>01:30 PM</h3>
+                    <h4>Project Exhibition</h4>
+                    <p>Explore innovative student projects.</p>
+                </article>
+
+                <article class="event-card">
+                    <h3>03:30 PM</h3>
+                    <h4>Prize Distribution</h4>
+                    <p>Recognition of winners and closing ceremony.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="registration" id="register">
+            <h2>Join the Celebration!</h2>
+            <p>Register now and be part of our college tech fest.</p>
+            <a class="btn"
+               href="mailto:events@example.com?subject=Tech%20Fest%20Registration">
+                Register Here
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ABC College of Engineering</p>
+    </footer>
+</body>
+</html>
